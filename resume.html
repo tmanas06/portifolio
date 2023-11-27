@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0; /* Light gray background color */
+            transition: background-color 0.3s;
+            color: #333; /* Default text color */
+        }
+
+        body.dark-mode {
+            background-color: #333; /* Dark gray background color in dark mode */
+            color: #555; /* Adjust text color for dark mode */
+        }
+
+        header {
+            color: blueviolet;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        section {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff; /* White background color for content */
+            padding: 20px;
+            border-radius: 8px; /* Optional: Rounded corners for the content */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for a subtle effect */
+        }
+
+        p {
+            line-height: 1.5;
+            color: #555;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 10px;
+            font-size: 14px;
+            margin-top: 10px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>T. Manas Chakravarty</h1>
+        <p>Software Engineering Student</p>
+    </header>
+    <section>
+        <h2>About Me</h2>
+        <p>
+            Motivated and detail-oriented software engineering student engrossed in different technologies across different
+domains such as ai/generative ai, machine learning ,cyber security , devops engineering , cloud engineering ,
+web3 , full stack development test engineering , prompt engineering , blockchain , cross platform development like
+flutter+dart and web development. Seeking to apply my programming skills to real-world projects and also gain indepth learning opportunity from experienced developers. Proficient in various programming languages and tools,
+with experience in web development and a strong understanding of data structures and algorithms.
+I am aspiring to excel my knowledge in the field of cybersecurity and have learnt python and api key's integrations
+with ai and I have learnt most about necessary linux for cybersecurity and am expanding my knowledge in devops
+and full stack development in order to deeper my knowledge of the working of net and servers.
+I have great interest in blockchain technology and how it can further change the landscape of the technology
+reaching a more secure web technology i.e. web3. 
+         </p>
+
+        <h2>Education</h2>
+        <p>
+            <strong>KL University, Hyderabad</strong><br>
+            Bachelor of Technology (B.Tech) in Computer Science and Engineering<br>
+            Currently in 2nd year
+        </p>
+
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: Python, Java, JavaScript</li>
+            <li>Web Development: HTML, CSS, Flask</li>
+            <li>Technologies: AI, Machine Learning, Cybersecurity, DevOps, Cloud Engineering</li>
+            <li>Tools: Git, Linux</li>
+        </ul>
+
+        <button onclick="toggleMode()">Button</button>
+    </section>
+
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>

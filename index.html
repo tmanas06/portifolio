@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>**\ Portfolio /**</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#" class="logo">T Manas Chakravarty</a>
+
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="About.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://github.com/tmanas06?tab=repositories">Projects</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>Heya, I'm T.Manas.Chakravarty</h1>
+            <h3>2nd year CSE (Hons.) At KL University, Hyderabad</h3>
+            <p>Motivated and detail-oriented software engineering student engrossed in different technologies across different domains 
+                such as ai/generative ai, machine learning ,cyber security , devops engineering , cloud engineering , web3 , full stack 
+                development test engineering , prompt engineering , blockchain , cross platform development like flutter+dart and web development. 
+                Seeking to apply my programming skills to real-world projects and also gain in-depth learning opportunity from experienced
+                developers. Proficient in various programming languages and tools, with experience in web development and a
+                strong understanding of data structures and algorithms.</p>
+                <div class="btn-box">
+                    <a href="https://linktr.ee/tmanas" class="btn">Talk with me</a>
+                    <a href="resume.html" class="btn">Resume</a>
+                </div>
+        </div>
+
+        <div class="home-sci">
+            <!-- Updated social media links with IDs -->
+            <a href="#" id="linkedin" class="href"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="#" id="twitter" class="href"><i class='bx bxl-twitter'></i></a>
+            <a href="#" id="github" class="href"><i class='bx bxl-github'></i></a>
+            <a href="#" id="discord" class="href"><i class='bx bxl-discord'></i></a>
+        </div>
+
+        <span class="home-imgHover"></span>
+    </section>
+
+    <!-- JavaScript for opening social media links in a new tab/window -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const linkedinLink = document.getElementById("linkedin");
+            const twitterLink = document.getElementById("twitter");
+            const githubLink = document.getElementById("github");
+            const discordLink = document.getElementById("discord");
+
+            const linkedinURL = "https://www.linkedin.com/in/t-manas-chakravarty-91958224b/";
+            const twitterURL = "https://twitter.com/tmanas2004";
+            const githubURL = "https://github.com/tmanas06";
+            const discordURL = "https://discord.com/channels/@me";
+
+            linkedinLink.addEventListener("click", function() {
+                window.open(linkedinURL, "_blank");
+            });
+
+            twitterLink.addEventListener("click", function() {
+                window.open(twitterURL, "_blank");
+            });
+
+            githubLink.addEventListener("click", function() {
+                window.open(githubURL, "_blank");
+            });
+
+            discordLink.addEventListener("click", function() {
+                window.open(discordURL, "_blank");
+            });
+        });
+    </script>
+
+</body>
+</html>

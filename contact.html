@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | T Manas Chakravarty</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* Add styles specific to the contact page */
+        .contact {
+            height: 100vh;
+            background: url('backim.png') no-repeat; /* Change 'contact-background.jpg' to your background image */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            padding: 0 10%;
+        }
+
+        .contact-content {
+            max-width: 800px;
+            color: #291305; /* Change text color if needed */
+            font-family: 'Times New Roman', Times, serif;
+            font-size: xx-large;
+          
+        }
+
+        .contact-content h1 {
+            font-size: 36px; /* Adjust font size as needed */
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .contact-content p {
+            font-size: 18px; /* Adjust font size as needed */
+            margin-bottom: 20px;
+        }
+
+        /* Additional styling for buttons or other elements */
+        .btn-box a {
+            background: #ff6600; /* Change button background color */
+            border: 2px solid #ff6600; /* Change button border color */
+            color: #fff; /* Change button text color */
+        }
+
+        .btn-box a:hover {
+            background: #fff; /* Change button background color on hover */
+            color: #ff6600; /* Change button text color on hover */
+        }
+
+        /* Additional styling for social media links */
+        .home-sci a {
+            border: 2px solid #ff6600; /* Change social media link border color */
+            color: #ff6600; /* Change social media link color */
+        }
+
+        .home-sci a:hover {
+            color: #fff; /* Change social media link color on hover */
+        }
+
+        /* Additional styling for hover effect */
+        .home-imgHover:hover {
+            background: #ff6600; /* Change hover effect background color */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Navigation (you can include this in a separate file and use 'include' if you want) -->
+        <a href="#" class="logo">My Contact Details</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#">Blog</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="https://github.com/tmanas06?tab=repositories">Projects</a>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <div class="contact-content">
+            <!-- Your contact page content goes here -->
+            <h1>Contact Me</h1>
+            <p>Feel free to reach out to me via phone or email:</p>
+            <p>Phone: +91 93982464880</p>
+            <p>Email: tmanas2004@gmail.com</p>
+            <div class="btn-box">
+                <a href="https://mail.google.com/mail/u/1/#inbox?compose=new" class="btn">Send Message</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for opening social media links in a new tab/window -->
+    <script>
+         document.addEventListener("DOMContentLoaded", function() {
+            const linkedinLink = document.getElementById("linkedin");
+            const twitterLink = document.getElementById("twitter");
+            const githubLink = document.getElementById("github");
+            const discordLink = document.getElementById("discord");
+
+            const linkedinURL = "https://www.linkedin.com/in/t-manas-chakravarty-91958224b/";
+            const twitterURL = "https://twitter.com/tmanas2004";
+            const githubURL = "https://github.com/tmanas06";
+            const discordURL = "https://discord.com/channels/@me";
+
+            linkedinLink.addEventListener("click", function() {
+                window.open(linkedinURL, "_blank");
+            });
+
+            twitterLink.addEventListener("click", function() {
+                window.open(twitterURL, "_blank");
+            });
+
+            githubLink.addEventListener("click", function() {
+                window.open(githubURL, "_blank");
+            });
+
+            discordLink.addEventListener("click", function() {
+                window.open(discordURL, "_blank");
+            });
+        });
+    </script>
+
+    <!-- Include your common footer or script tags if necessary -->
+
+</body>
+</html>

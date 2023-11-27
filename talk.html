@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talk_with_me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0; /* Light gray background color */
+            color: #333; /* Default text color */
+            transition: background-color 0.3s, color 0.3s;
+            position: relative;
+        }
+
+        body.dark-mode {
+            background-color: #333; /* Dark gray background color in dark mode */
+            color: #555; /* Adjust text color for dark mode */
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            color: blueviolet;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .info-box {
+            background-color: #fff; /* White background color for boxes */
+            padding: 20px;
+            border-radius: 8px; /* Rounded corners for the boxes */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+            margin-bottom: 20px;
+        }
+
+        .toggle-button {
+            cursor: pointer;
+            padding: 10px;
+            font-size: 14px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Talk to me on ;)</h1>
+    </header>
+    <main>
+        <button class="toggle-button" onclick="toggleMode()">Button</button>
+
+        <div class="info-box">
+            <h2>Contact Information</h2>
+            <p>Phone Number: 93982464880</p>
+            <p>Email: tmanas2004@gmail.com</p>
+        </div>
+
+        <div class="info-box">
+            <h2>Additional Information</h2>
+            <p>Any other information goes here...</p>
+        </div>
+    </main>
+    <!-- Add your JavaScript or other scripts at the end of the body -->
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>

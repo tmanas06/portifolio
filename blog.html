@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0; /* Light gray background color */
+            color: #333; /* Default text color */
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark-mode {
+            background-color: #333; /* Dark gray background color in dark mode */
+            color: #555; /* Adjust text color for dark mode */
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .blog-post {
+            background-color: #fff; /* White background color for blog posts */
+            padding: 20px;
+            border-radius: 8px; /* Rounded corners for the blog posts */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+            margin-bottom: 20px;
+        }
+
+        .toggle-button {
+            cursor: pointer;
+            padding: 10px;
+            font-size: 14px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+    </header>
+    <main>
+        <button class="toggle-button" onclick="toggleMode()">Button</button>
+
+        <div class="blog-post">
+            <h2>Blog Post Title 1</h2>
+            <p>None as of now.</p>
+        </div>
+
+        <div class="blog-post">
+            <h2>Blog Post Title 2</h2>
+            <p>None as of now.</p>
+        </div>
+
+        <!-- Add more blog posts as needed -->
+
+    </main>
+    <!-- Add your JavaScript or other scripts at the end of the body -->
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
